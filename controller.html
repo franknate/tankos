@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upgraded Guacamole</title>
+    <script type="module" crossorigin src="/assets/controller.d63d74b9.js"></script>
+    <link rel="modulepreload" href="/assets/index.1de03ae5.js">
+    <link rel="stylesheet" href="/assets/index.89a21d86.css">
+  </head>
+  <body>
+
+    <div id="homeController" class="controller flex h-screen">
+      <div
+        id="readyBtn"
+        class="flex w-full justify-center items-center bg-red-900 active:bg-red-800 rounded-xl border-4 border-r-2"
+      >
+        <h1 id="readyHeader" class="text-white text-3xl">READY</h1>
+      </div>
+    </div>
+
+    <div id="gameController" class="controller flex justify-center items-center h-screen bg-neutral-500">
+      <div id="left" class="w-[48%] h-[96%] flex flex-col mr-1">
+        <div id="sideBtnContainer" class="h-full flex mb-2 hidden">
+          <div id="leftBtn" class="w-full flex justify-center items-center bg-neutral-900 rounded-tl-[10%]">
+            <div id="triangleLeft"></div>
+          </div>
+          <div id="rightBtn" class="w-full flex justify-center items-center bg-neutral-900">
+            <div id="triangleRight"></div>
+          </div>
+        </div>
+        <div id="fireBtn" class="h-full bg-neutral-900 text-neutral-500 flex justify-center items-center text-[3rem] active:text-[4rem] transition-all duration-75 rounded-l-[10%]">
+          <b>Fire</b>
+        </div>                
+      </div>
+      <div id="right" class="w-[48%] h-[96%] flex flex-col ml-1">
+        <div id="forwardBtn" class="h-full bg-neutral-900 flex justify-center items-center rounded-tr-[10%]">
+          <div id="triangleUp"></div>
+        </div>
+        <div id="backwardsBtn" class="h-full bg-neutral-900 flex justify-center items-center rounded-br-[10%]">
+          <div id="triangleDown"></div>
+        </div>
+      </div>
+    </div>
+    <div id="tiltBtn" class="absolute bottom-0 left-[calc(50%-22px)] w-[44px] h-[44px] rounded-t-full bg-neutral-800 flex justify-center items-center">
+      <svg id="tiltIcon" xmlns="http://www.w3.org/2000/svg" class="hidden" width="26px" height="26px" viewBox="0 0 24 24"><path fill="rgb(173,238,0)" d="M4.878 13.696C2.959 11.777 2 10.818 2 9.626c0-1.192.96-2.151 2.878-4.07l.678-.678C7.475 2.959 8.434 2 9.626 2c1.192 0 2.151.96 4.07 2.878l5.426 5.426C21.041 12.223 22 13.182 22 14.374c0 1.192-.96 2.151-2.878 4.07l-.678.678C16.525 21.041 15.566 22 14.374 22c-1.192 0-2.151-.96-4.07-2.878z" opacity="0.5"/><path fill="currentColor" d="M9.478 6.087a.75.75 0 0 0-1.061-1.06l-3.392 3.39a.75.75 0 0 0 1.061 1.061zm7.27 10.662a1.439 1.439 0 1 0-2.035-2.035a1.439 1.439 0 0 0 2.035 2.035"/><path fill="rgb(255,255,255)" fill-rule="evenodd" d="M16.26 1.874a.75.75 0 0 1 .866-.613c3.2.544 5.624 3.36 5.624 6.74a.75.75 0 0 1-1.17.62l-1.5-1.014a.75.75 0 1 1 .84-1.242l.1.067c-.577-1.91-2.18-3.358-4.146-3.693a.75.75 0 0 1-.613-.865M7.74 22.126a.75.75 0 0 1-.866.613C3.674 22.196 1.25 19.38 1.25 16a.75.75 0 0 1 1.17-.621l1.5 1.014a.75.75 0 0 1-.84 1.242l-.1-.067c.577 1.91 2.18 3.358 4.146 3.693a.75.75 0 0 1 .613.865" clip-rule="evenodd"/></svg>
+      <svg id="leftIcon" xmlns="http://www.w3.org/2000/svg" class="-mr-[7px]" width="28px" height="28px" viewBox="0 0 256 256"><g fill="rgb(173,238,0)"><path d="M160 48v160l-80-80Z" opacity="0.2"/><path d="M163.06 40.61a8 8 0 0 0-8.72 1.73l-80 80a8 8 0 0 0 0 11.32l80 80A8 8 0 0 0 168 208V48a8 8 0 0 0-4.94-7.39M152 188.69L91.31 128L152 67.31Z"/></g></svg>
+      <svg id="rightIcon" xmlns="http://www.w3.org/2000/svg" class="-ml-[7px]" width="28px" height="28px" viewBox="0 0 256 256"><g fill="rgb(173,238,0)"><path d="m176 128l-80 80V48Z" opacity="0.2"/><path d="m181.66 122.34l-80-80A8 8 0 0 0 88 48v160a8 8 0 0 0 13.66 5.66l80-80a8 8 0 0 0 0-11.32M104 188.69V67.31L164.69 128Z"/></g></svg>
+    </div>
+
+    <script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.8.0.js"></script>
+    
+  </body>
+</html>
